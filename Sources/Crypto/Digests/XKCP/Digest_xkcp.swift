@@ -14,8 +14,8 @@
 #if CRYPTO_IN_SWIFTPM && !CRYPTO_IN_SWIFTPM_FORCE_BUILD_API
 @_exported import CryptoKit
 #else
-@_implementationOnly import CXKCP
-@_implementationOnly import CXKCPShims
+import CXKCP
+import CXKCPShims
 
 @available(macOS 10.15, iOS 13, watchOS 6, tvOS 13, macCatalyst 13, visionOS 1.0, *)
 protocol XKCPBackedHashFunction: HashFunctionImplementationDetails {

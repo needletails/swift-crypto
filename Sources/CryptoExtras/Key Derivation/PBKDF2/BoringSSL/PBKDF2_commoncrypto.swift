@@ -24,7 +24,7 @@ import Foundation
 #endif
 
 #if canImport(CommonCrypto)
-@_implementationOnly import CommonCrypto
+import CommonCrypto
 
 @available(macOS 10.15, iOS 13, watchOS 6, tvOS 13, macCatalyst 13, visionOS 1.0, *)
 internal struct CommonCryptoPBKDF2 {

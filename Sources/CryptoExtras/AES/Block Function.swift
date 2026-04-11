@@ -17,8 +17,8 @@
 #else
 import Crypto
 #endif
-@_implementationOnly import CCryptoBoringSSL
-@_implementationOnly import CCryptoBoringSSLShims
+import CCryptoBoringSSL
+import CCryptoBoringSSLShims
 import CryptoBoringWrapper
 #if canImport(FoundationEssentials)
 import FoundationEssentials

@@ -17,7 +17,7 @@ import FoundationEssentials
 #else
 import Foundation
 #endif
-@_implementationOnly import CCryptoBoringSSL
+import CCryptoBoringSSL
 import Crypto
 
 /// Sequence DRBG

@@ -11,7 +11,7 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 //===----------------------------------------------------------------------===//
-@_implementationOnly import CCryptoBoringSSL
+import CCryptoBoringSSL
 #if CRYPTO_IN_SWIFTPM && !CRYPTO_IN_SWIFTPM_FORCE_BUILD_API
 @_exported import CryptoKit
 #else
@@ -51,7 +51,7 @@ extension AES {
         ///   - outputSize: The number of bytes of MAC to generate. Must be in the range 0 to 16 inclusive.
         public init(key: SymmetricKey, outputSize: Int) throws {
             guard [128, 192, 256].contains(key.bitCount) else {
-                throw CryptoError.incorrectKeySize
+                throw CryptoKitError.incorrectKeySize
             }
             guard (0...16).contains(outputSize) else {
                 throw CryptoKitError.incorrectParameterSize

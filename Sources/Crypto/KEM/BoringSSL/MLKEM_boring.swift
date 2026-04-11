@@ -19,7 +19,7 @@
 #if CRYPTO_IN_SWIFTPM && !CRYPTO_IN_SWIFTPM_FORCE_BUILD_API
 @_exported import CryptoKit
 #else
-@_implementationOnly import CCryptoBoringSSL
+import CCryptoBoringSSL
 #if canImport(FoundationEssentials)
 import FoundationEssentials
 #else

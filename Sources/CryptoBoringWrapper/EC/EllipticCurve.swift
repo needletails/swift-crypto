@@ -11,7 +11,7 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 //===----------------------------------------------------------------------===//
-@_implementationOnly import CCryptoBoringSSL
+import CCryptoBoringSSL
 
 /// A wrapper around BoringSSL's EC_GROUP object that handles reference counting and
 /// liveness.
